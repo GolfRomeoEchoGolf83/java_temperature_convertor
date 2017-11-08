@@ -15,7 +15,7 @@ public class conversion {
 		// ask if user is willing to make an other conversion
 	}
 	
-	// arrond a number
+	// round a number
 	public static double arrondi (double A, int B) {
 		return (double) ((int) (A * Math.pow(10, B) + .5)) / Math.pow(10, B);
 	}
