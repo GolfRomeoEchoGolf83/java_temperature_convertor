@@ -31,12 +31,16 @@ public class conversion {
 		toConvert = sc.nextDouble();
 		sc.nextLine(); // emptu line 
 			// if celsius convert to fahrenheit
-		if(mode = '1') {}
-			// if fahrenheit convert to celsius
-		if(mode = '2') {}
-			// if other then invalid
-		// display result
-		System.out.println(" °F refers to : " + " °C.");
+		if(mode = '1') {
+			converted = (toConvert * (9.0/5.0)) + 32.0;
+			System.out.println(toConvert + " °C refers to : " + converted + " °F.");
+			}
+		}else{
+			converted = ((toConvert - 32) * 5) / 9;
+			System.out.println(toConvert + " °F refers to : " + converted + " °C.");
+		}
+
+	
 		// ask if user is willing to make an other conversion
 		System.out.println("Are you willing to convert an other temperature ? (Y/N)");
 		
