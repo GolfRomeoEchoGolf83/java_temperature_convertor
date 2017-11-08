@@ -7,6 +7,8 @@ public class conversion {
 		Scanner sc = new Scanner(System.in);
 		
 		// variable initialisation 
+		double toConvert, converted=0;
+		char response=' ', mode=' ';
 		
 		System.out.println("TEMPARUTURE CONVERTOR");
 		System.out.println("=====================");
@@ -16,9 +18,13 @@ public class conversion {
 		System.out.println("Which conversion are you willing to make :");
 		System.out.println("1 - Celsius to Fahrenheit");
 		System.out.println("2 - Fahrenheit to Celsius");
+		mode = sc.nextLine().charAt(0);
 		
 		// if user choose a number but 1 or 2
+		if (mode != '1' || mode != '2') {
 		System.out.println("Wrong choice, you can only convert Celsius and Fahrenheit");
+		}
+		
 		// take a val
 		System.out.println("Temperature to convert :");
 			// if celsius convert to degree
